@@ -1,0 +1,41 @@
+CREATE DATABASE ecommerice_db;
+
+USE ecommerice_db;
+
+CREATE TABLE contact_form (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    mobile VARCHAR(20),
+    subject VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL,
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    address TEXT NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    coupon_code VARCHAR(50),
+    order_summary TEXT NOT NULL,
+    total DECIMAL(10, 2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT * FROM contact_form;
+SELECT * FROM users;
+SELECT * FROM orders;
+
+TRUNCATE TABLE contact_form;
+TRUNCATE TABLE users;
+TRUNCATE TABLE orders;

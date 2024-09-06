@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELZOKSH</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Start Header -->
+    <div class="header">
+        <div class="top-nav container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <form action="" class="search">
+                <input type="search" placeholder="Search for Products...">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="cart-header">
+                <div class="icon-cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-item">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My Cart:</p>
+                    <p class="price-cart-head">$0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav container">
+            <div class="links">
+                <i class="fa-solid fa-bars open-menue-btn"></i>
+
+                <ul>
+                    <span class="bg-overlay"></span>
+                    <i class="fa-regular fa-circle-xmark close-menue-btn"></i>
+
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="all-products.html">All Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <div class="login-signup">
+                    <a href="login.html">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Cart-Menue -->
+    <div class="cart-menue">
+        <div class="top-cart">
+            <h3>My Cart <span class="count-item-cart">(0 Items in Cart)</span></h3>
+            <span class="close-cart"><i class="fa-solid fa-circle-xmark"></i></span>
+        </div>
+
+        <div class="items-in-cart">
+
+        </div>
+
+        <div class="bottom-cart">
+            <div class="total">
+                <p>Cart Subtotal</p>
+                <p class="price-cart-subtotal">0</p>
+            </div>
+
+            <div class="button-cart">
+                <a href="checkout.html" class="btn-cart">Proceed to Checkout</a>
+                <a href="all-products.html" class="btn-cart trans-bg">Shop More</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Cart-Menue -->
+
+    <!-- Start Signup -->
+    <div class="signup-form">
+        <div class="form-container">
+
+            <p class="title">Welcome</p>
+
+            <form action="php/signup.php" method="POST" class="form">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            
+                <button class="form-btn" type="submit">Sign Up</button>
+            </form>
+            
+
+            <p class="signup-label">
+                Have an account? <a href="login.html" class="signup-link">Login</a>
+            </p>
+
+            <div class="btns-container">
+                <div class="apple-signup-btn">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>Sign Up with Apple</span>
+                </div>
+
+                <div class="google-signup-btn">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Sign Up with Google</span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <!-- End Signup -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+
+            <div class="big-row">
+                <img src="img/logo-white.png" alt="">
+
+                <div class="hotline">
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div class="text">
+                        <h5>Hotline Free 24/24 :</h5>
+                        <h6>(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, itaque.</p>
+            </div>
+
+            <div class="row">
+                <h4>FAQs & Help</h4>
+
+                <div class="links">
+                    <a href="#">F.A.Q.s</a>
+                    <a href="#">Ordering Tracking</a>
+                    <a href="#">Contacts</a>
+                    <a href="#">Events</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Shipping & Delivery</h4>
+
+                <div class="links">
+                    <a href="#">Delivery Information</a>
+                    <a href="#">Discount</a>
+                    <a href="#">Payment & Shipping</a>
+                    <a href="#">Estimated Delivery Time</a>
+                    <a href="#">Shipping Guide</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <h4>Information</h4>
+
+                <div class="links">
+                    <a href="#">Popular</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Privacy & Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-footer">
+            <div class="container">
+
+                <p>Copyright &copy; <span>EL ZOKSH.</span> All Right Reserved</p>
+
+                <div class="payment-img">
+                    <img src="img/payment-1.png" alt="">
+                    <img src="img/payment-2.png" alt="">
+                    <img src="img/payment-3.png" alt="">
+                    <img src="img/payment-4.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
