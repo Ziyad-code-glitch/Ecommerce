@@ -3,7 +3,7 @@
 Welcome to the ELZOKSH e-commerce website! 🛒 This project is designed to showcase a fully functional online store, featuring a user-friendly interface, dynamic product display, and integrated backend functionalities.
 
 ## 🌍 Live Demo
-Experience the live version of the ELZOKSH website [here]([#](https://ziyad-code-glitch.github.io/Ecommerce/).
+Experience the live version of the ELZOKSH website [here](https://ziyad-code-glitch.github.io/Ecommerce/).
 
 ## 📖 About This Project
 The ELZOKSH e-commerce website includes various features designed to provide an engaging and efficient shopping experience. It encompasses:
